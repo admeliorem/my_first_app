@@ -1,0 +1,14 @@
+<h1 class="text-center">Users cart app</h1>
+<div class="container d-flex justify-content-between flex-wrap">
+
+    <div *ngFor="let Users of users" class="card w-25 mx-1 my-1">    
+        <div class="card-body">
+            <h5 class="card-title">{{Users.id}}</h5>
+            <p class="card-text">{{Users.name}}</p>
+            <p class="card-text">{{Users.username}}</p>
+            <p class="card-text">{{Users.email}}</p>
+            <button class="btn btn-danger" type="button" (click)="deleteUser(Users.id)">Удалить</button>
+        </div>
+    </div>
+
+</div>
